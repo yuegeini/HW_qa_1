@@ -10,19 +10,20 @@ public class CashbackHackServiceTest {
     public void testRemain1() {
         int expected = 1;
         int actual = service.remain(999);
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
     @Test
     public void testRemain0() {
         int expected = 0;
         int actual = service.remain(1000);
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
+
     @Test
     public void testRemain999() {
         int expected = 999;
         int actual = service.remain(1001);
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 }
